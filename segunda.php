@@ -16,6 +16,12 @@
                 if (isset($_COOKIE['telefono'])){
                     echo $_COOKIE['telefono'];
                 }
+                if(!isset($_COOKIE[$cookie_nombre])){
+                    echo "La cookie " . $cookie_nombre . " no está configurada";
+                } else{
+                    echo "Cookie " . $cookie_nombre . "está correctamente configurada";
+                    echo "El valor es: " . $_COOKIE[$cookie_nombre];
+                }
             ?>
         </p>
         <form action="controladorSesiones.php" method="POST">

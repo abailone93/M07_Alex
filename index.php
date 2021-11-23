@@ -15,8 +15,11 @@
             $_SESSION['nombre'] = "Alex Bailón";
             $cookie_nombre = "usuario";
             $cookie_valor = "Alex Bailon";
-            setcookie($cookie_nombre, $cookie_valor); 
-            setcookie("telefono", "622276168");
+            /*setcookie($cookie_nombre, $cookie_valor); 
+            setcookie("telefono", "622276168");*/
+            //sintaxsis
+            //setcookie(name, value, expire, path, domain, secure, httponly);
+            setcookie($cookie_nombre, $cookie_valor, time() + (30 * 3), "/"); // 30 = 30s
         ?>
         <a href="segunda.php">Segunda pagina php</a>
     </body>
