@@ -13,6 +13,10 @@
     <body>
         <?php
             $_SESSION['nombre'] = "Alex Bailón";
+            $cookie_nombre = "usuario";
+            $cookie_valor = "Alex Bailon";
+            setcookie($cookie_nombre, $cookie_valor); 
+            setcookie("telefono", "622276168");
         ?>
         <a href="segunda.php">Segunda pagina php</a>
     </body>

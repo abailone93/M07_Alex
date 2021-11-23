@@ -13,6 +13,9 @@
         <p>
             <?php
                 echo $_SESSION['nombre'];
+                if (isset($_COOKIE['telefono'])){
+                    echo $_COOKIE['telefono'];
+                }
             ?>
         </p>
         <form action="controladorSesiones.php" method="POST">
